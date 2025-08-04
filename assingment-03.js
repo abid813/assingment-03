@@ -27,3 +27,38 @@ if( money >= 25000){
     }
  } 
 
+ // Problem 04 - (Delete / Store)
+
+var fileNames = [
+    "result.pdf",
+    "data.docs",
+    "pdfData.jpg",
+    "#exp.mp4",
+    "docx.txt",
+    "docx.xpdf",
+    "slipdf.txt",
+]
+
+for( var i = 0; i<=fileNames.length; i++ ){
+    var fileName = fileNames[i];
+    
+    if (fileName.startsWith('#') 
+        || fileName.endsWith('.pdf') || fileName.endsWith('.docs')  ){
+    
+            console.log('Store');
+
+        }else{
+            console.log('Delete');
+        }
+}
+
+
+
+// Problem 05 - ( PH Email Generator )
+
+var student = { name: "jhankar", roll: 1014, department: "cse" };
+
+var email = student.name + student.roll + "." + 
+student.department + "@ph.ac.bd";
+
+console.log(email);
