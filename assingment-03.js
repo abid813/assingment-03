@@ -16,3 +16,14 @@ if( money >= 25000){
     console.log('chocolate');
 }
 
+//  problem -03 ( Medicine Planner )
+
+ let lastDay = 11;
+ for( day = 1; day <= lastDay; day++ ){
+    if( day % 6 === 0  ){
+        console.log(day + " -medicine");
+    } else{
+        console.log(day + ' -rest');
+    }
+ } 
+
